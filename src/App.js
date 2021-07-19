@@ -8,18 +8,6 @@ import Post from "./components/blogPosts.js";
 import About from "./components/about.js";
 
 class App extends Component {
-  state = { fileUrl: "", file: "", fileName: "" };
-  componentDidMount(){
-    Storage.get('Venus-1313.jpg')
-    .then(data => {
-      this.setState({
-        fileUrl: data
-      })
-    })
-    .catch(err => {
-      console.log('Basically', err)
-    })
-  }
 
   render() {
     return (
