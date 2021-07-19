@@ -7,9 +7,6 @@ import Blog from "./components/blog.js";
 import Post from "./components/blogPosts.js";
 import About from "./components/about.js";
 
-import { Storage } from "aws-amplify";
-import { withAuthenticator } from "aws-amplify-react";
-
 class App extends Component {
   state = { fileUrl: "", file: "", fileName: "" };
   componentDidMount(){
