@@ -1,0 +1,69 @@
+.post {
+  font-family: "Source Code Pro";
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-self: center;
+  justify-content: center;
+}
+.post h1 {
+  text-align: center;
+  color: #5E2BFF;
+  font-size: 40px;
+  line-height: 43px;
+  font-style: italic;
+  font-weight: 600;
+  max-width: 1000px;
+  margin: 0px 0;
+}
+.date{
+  font-family: 'Source Code Pro';
+  text-align: center;
+  color: #707070;
+  font-size: 25px;
+}
+.tagLine{
+  font-family: "Source Sans Pro";
+  color: black;
+  font-size: 25px;
+  line-height: 33px;
+  text-align: center;
+  font-weight: 400;
+  margin: 7px 0;
+}
+.tags {
+  margin: 7px auto;
+  margin-bottom: 20px;
+  justify-self: center;
+  justify-content: center;
+  width: 100%;
+  display: inline-flex;
+}
+.tags div {
+  font-size: 20px;
+  width: min-content;
+  padding: 3px 25px;
+  margin: 0 10px;
+  background-color: #E2E2E2;
+  border-radius: 6px;
+  
+}
+.mainPhoto {
+  width: 100%;
+  max-height: 617px;
+  object-fit: cover;
+  margin: 40px auto;
+}
+.body img{
+  width: 80%;
+  max-height: 400px;
+  object-fit: cover;
+}
+.body{
+  margin: 0 auto;
+  width: 90%;
+  font-size: 22px
+}
+.post p{
+  font-family: 'Source Sans Pro';
+}

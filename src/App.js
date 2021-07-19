@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { Component } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import NavBar from "./components/NavBar/NavBar";
+import Home from "./components/home/home.js";
+import Blog from "./components/blog.js";
+import Post from "./components/blogPosts.js";
+import About from "./components/about.js";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Storage } from "aws-amplify";
+import { withAuthenticator } from "aws-amplify-react";
+
+class App extends Component {
+  state = { fileUrl: "", file: "", fileName: "" };
+  componentDidMount(){
+    Storage.get('Venus-1313.jpg')
+    .then(data => {
+      this.setState({
+        fileUrl: data
+      })
+    })
+    .catch(err => {
+      console.log('Basically', err)
+    })
+  }
+
+  render() {
+    return (
+      <BrowserRouter>
+        <NavBar />
+        <div className="App">
+          <Switch>
+            <Route component={Home} path="/" exact />
+            <Route component={Blog} path="/blog" exact />
+            <Route component={About} path="/about" />
+            <Route component={Post} path="/:slug" />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

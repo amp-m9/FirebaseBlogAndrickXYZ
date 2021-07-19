@@ -1,0 +1,16 @@
+{
+  "auth": {
+    "andrickxyz5f16a854": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "amplifys3storage": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}

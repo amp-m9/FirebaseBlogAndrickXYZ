@@ -1,0 +1,104 @@
+.about {
+  margin-top: 40px;
+  width: 100%;
+  background-color: #4a4e69;
+  font-family: "Source Code Pro";
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.about-card {
+  font-family: "Source Sans Pro";
+  display: grid;
+  grid-template-columns: 4fr 7fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  justify-self: center;
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 1300px;
+  height: 100%;
+  background-color: white;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.about-left img {
+  overflow: hidden;
+  margin-left: -3px;
+  width: 98%;
+  height: max-content;
+  max-height: 400px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.imgContainer{
+  
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.box-bg{
+  margin-left: 7px;
+  margin-top: -410px;
+  width: 98%;
+  height:400px;
+  max-height: 400px;
+  background: linear-gradient(
+    70deg,
+    rgba(84, 15, 204, 1) 0%,
+    rgba(209, 22, 164, 1) 40%,
+    rgba(84, 15, 204, 1) 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.about-right h2 {
+  margin-top: -10px;
+  line-height: 5.9rem;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 5.4rem;
+  margin-bottom: 10px;
+  background: linear-gradient(
+    70deg,
+    rgba(196, 38, 137, 1) 0%,
+    rgba(84, 15, 204, 1) 40%,
+    rgba(209, 22, 164, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-right p {
+  margin-top: 0px;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 22px;
+  padding-right: 50px;
+  margin-bottom: 20px;
+}
+
+.about-right h3 {
+  margin-top: 20px;
+}
+.about h3 {
+  color: #7E10C7;
+  font-weight: 600;
+  font-size: 30px;
+}
+.about a{
+  color: #7E10C7;
+}
+
+.tech-logos{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+
+}
+
+.tech-logos img{
+  width: 130px;
+  padding:0px 0;
+  justify-self: center;
+}
