@@ -16,6 +16,6 @@ jobs:
     - name: Setup the code
       run: npm install
     - name: Deploy to Firebase
-      uses: amp-m9/site@v1.0
+      uses: amp-m9/site
       with:
         firebase-token: ${{ secrets.FIREBASE_TOKEN }}
