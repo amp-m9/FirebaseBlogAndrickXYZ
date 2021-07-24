@@ -1,0 +1,119 @@
+#home {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #4a4e69;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  padding-top: 100px;
+}
+.typeWrite {
+  font-family: "Source Code Pro", monospace;
+  font-weight: lighter;
+  align-self: center;
+  align-content: center;
+  width: 80%;
+  padding-right: 1vw;
+  margin: 0 auto;
+  color: #f2e9e4;
+  padding-bottom: 30px;
+}
+.headerHigh {
+  /* max-width: 100px; */
+  align-self: center;
+  align-content: center;
+  line-height: 7vw;
+  font-size: 15vw;
+  font-style: italic;
+}
+.headerLow {
+  font-size: 9vw;
+  line-height: 9vw;
+}
+.tagline {
+  width: 100%;
+  align-self: center;
+  align-content: center;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  /* padding-right: 40vw; */
+}
+.multiline {
+  display: none;
+}
+.space{
+    display: none;
+}
+
+.launch {
+  display: grid;
+  gap: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  font-weight: bold;
+  font-size: 27px;
+  color: #f2e9e4;
+  height: 70px;
+}
+
+@media screen and (max-width: 960px) {
+  .launch {
+    margin-top: 20px;
+    gap: unset;
+    width: 100%;
+    flex-direction: column;
+  }
+  .links {
+    margin: 0 10px;
+  }
+  #home {
+    justify-content: flex-start;
+  }
+  .headerHigh {
+    /* max-width: 100px; */
+    align-self: center;
+    align-content: center;
+    line-height: 8vw;
+    font-size: 18vw;
+    font-style: italic;
+  }
+  .multiline {
+    display: inline;
+  }
+  .headerLow {
+    font-size: 15vw;
+  }
+  .headerHigh.cursor{
+      display: none;
+  }
+  span.secLine {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16vw;
+    margin-left: calc(-1.5vw);
+    font-size: calc(21vw);
+    /* display: inline-block;
+    transform: scale(1.4);  */
+  }
+  span.dot{
+    font-size: 12vw;
+    font-style: italic;
+  }
+  .thirLine {
+      font-weight: 900;
+    line-height: 15vw;
+    font-size: 29vw;
+  }
+  .tagline {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+}

@@ -1,20 +1,15 @@
 import React, { Component } from "react";
-import "./about.css";
 import mePhotoshoot from "../assets/images/mePhotoshoot.jpg";
-import c_logo from "../assets/logos/c_logo.svg"
-import HTML5_logo from "../assets/logos/HTML5_Logo.svg"
-import godot_logo from "../assets/logos/godot_logo.svg"
-import java_logo from "../assets/logos/java_logo.svg"
-import OpenGL_logo from "../assets/logos/OpenGL_logo.svg"
-import react_logo from "../assets/logos/react_logo.svg"
-import { Progress } from "react-sweet-progress";
+import c_logo from "../assets/icons/c_logo.svg"
+import godot_logo from "../assets/icons/godot_logo.svg"
+import java_logo from "../assets/icons/java_logo.svg"
+import OpenGL_logo from "../assets/icons/OpenGL_logo.svg"
+import react_logo from "../assets/icons/react_logo.svg"
 import "react-sweet-progress/lib/style.css";
 class About extends Component {
   render() {
     return (
-      <div style={{ minHeight: "100vh", background: "#4a4e69" }}>
         <div className="about">
-          <h1>ABOUT</h1>
           <div className="about-card">
             <div className="about-left">
               <div style={{ marginTop: "13px", marginBottom: "40px" }}>
@@ -51,7 +46,6 @@ class About extends Component {
             </div>
           </div>
         </div>
-      </div>
     );
   }
 }

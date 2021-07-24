@@ -1,7 +1,6 @@
 import { Redirect } from "react-router-dom";
 import React, { useState } from "react";
 import { getFirebase } from "../firebase";
-import "./blogPosts.css";
 const Post = ({ match }) => {
   const slug = match.params.slug;
   const [loading, setLoading] = useState(true);
@@ -40,7 +39,7 @@ const Post = ({ match }) => {
     return <h1>Loading...</h1>;
   }
 
-  if (postDoesNotExist) {
+  if (!currentPost) {
     return <Redirect to="/404" />;
   }
 

@@ -11,7 +11,7 @@ class Home extends Component {
           <Typewriter
             options={{
               delay: 25,
-              cursor: "<span class='headerHigh'>_</span>",
+              cursor: "<span class='headerHigh cursor'>_</span>",
               skipAddStyles: false,
               wrapperClassName: "headerHigh",
             }}
@@ -20,9 +20,13 @@ class Home extends Component {
                 .typeString("ANDRICK.<br/>")
                 .pauseFor(200)
                 // .deleteChars(4)
-                .typeString('<span class="headerLow">MIRAGE</span>.')
+                .typeString(
+                    '<span class="headerLow secLine">'+
+                      'MIRAGE<span class="dot">.</span>'+
+                    '</span>'+
+                  '<br class="multiline"/>')
                 .pauseFor(100)
-                .typeString('<span class="headerLow">POSO</span>.')
+                .typeString('<span class="headerLow thirLine">POSO</span>.')
                 .start();
               // .pauseFor(150)
               // .deleteChars(8)
@@ -35,7 +39,6 @@ class Home extends Component {
           </div>
         </div>
 
-        <div>
           <ul className={"launch"}>
             {homeItems.map((item, index) => {
               return (
@@ -47,7 +50,6 @@ class Home extends Component {
               );
             })}
           </ul>
-        </div>
       </div>
     );
   }

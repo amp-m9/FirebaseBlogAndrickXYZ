@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { getFirebase } from "../firebase";
 import { Link } from "react-router-dom";
-
+import paper from "../assets/icons/paper.svg";
 const Blog = () => {
   const [loading, setLoading] = useState(true);
   const [blogPosts, setBlogPosts] = useState([]);
@@ -37,50 +37,44 @@ const Blog = () => {
     <div class="posts">
       <div class="hero" />
       <div class="pageContainer">
-        <div class="title" style={{ margin: "3vh auto" }}>
-          [BLOG POSTS]
+        <div class="title">
+          Blog
+          <img
+          class="blog-icon"
+            src={paper}
+            
+          />
         </div>
-        <div
+        <div class="post-container"
           style={{
-            margin: "0 1vw",
+            margin: "-15px 1vw",
             justifyItems: "center",
             justifyContent: "center",
           }}
         >
-          <div class="title" style={{ fontSize: "50px", paddingLeft: "50px" }}>
-            [Latest]
-          </div>
+          
 
           <div class="card latest">
             <img src={latestPost.coverImage} class="cover latest" alt="cover" />
             <div class="cardText">
-              <div>
-                <h1 class="postTitle">{latestPost.title}</h1>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: `${latestPost.content
-                      .replace(/<img[^>]*>/g, "")
-                      .trim()
-                      .substring(0, 550)}...`,
-                  }}
-                />
-                <h2
-                  style={{
-                    fontFamily: "Source Code Pro",
-                    fontSize: "30px",
-                    color: "#5E2BFF",
-                    textAlign: "end",
-                    paddingRight: "28px",
-                  }}
-                >
-                  <a href={`/${latestPost.slug}`}>[READ MORE...]</a>
-                </h2>
-              </div>
+              <h1 class="postTitle">{latestPost.title}</h1>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: `${latestPost.content
+                    .replace(/<img[^>]*>/g, "")
+                    .trim()
+                    .substring(0, 550)}...`,
+                }}
+                class="sample-text"
+              />
+              <h2 class="read-more">
+                <a href={`/blog/${latestPost.slug}`}>[READ MORE...]</a>
+              </h2>
             </div>
           </div>
           <div class="grid-container">
             {blogPosts.map((blogPost) => (
-              <Link to={`/${blogPost.slug}`}>
+              <Link to={`/blog/${blogPost.slug}`}>
                 <div class="card">
                   <img
                     src={blogPost.coverImage}
