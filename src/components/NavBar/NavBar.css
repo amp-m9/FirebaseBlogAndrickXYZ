@@ -29,8 +29,8 @@
   margin-left: 30px;
   padding: 6px 0;
   justify-self: flex-start;
-  filter: invert(90%) sepia(5%) saturate(626%) hue-rotate(323deg)
-    brightness(108%) contrast(90%);
+  /* filter: invert(90%) sepia(5%) saturate(626%) hue-rotate(323deg)
+    brightness(108%) contrast(90%); */
 }
 
 .NavBar {
@@ -48,7 +48,7 @@
   justify-self: flex-end;
 }
 
-.nav-menu .icons{
+.nav-menu .icons {
   display: flex;
   list-style: none;
   text-align: center;
@@ -76,7 +76,7 @@
     position: fixed;
     justify-content: flex-start;
   }
-  .tabs a{
+  .tabs a {
     text-align: left;
     padding: 10px 0;
     width: 100%;
@@ -105,15 +105,16 @@
   }
 
   .nav-links {
+    font-size: 1.7rem;
+    margin: 0 30px;
+    padding: 4px 10px;
     text-align: center;
-    padding: 0px;
-    width: 100%;
     display: table;
   }
 
   .nav-links:hover {
-    background-color: #7577fa;
-    border-radius: 0;
+    background-color: #393961;
+    border-radius: 10px;
   }
 
   navbar-logo {
@@ -126,7 +127,7 @@
   .menu-icon {
     display: block;
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     transform: translate(-100%, 7%);
     font-size: 1.8rem;

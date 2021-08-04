@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { ThemeConsumer } from "react-bootstrap/esm/ThemeProvider";
 import UnmountClosed from "react-collapse";
 import { Route, Link } from "react-router-dom";
-import amp from "../../assets/icons/amp2.png";
+import amp from "../../assets/icons/amp.svg";
 import { MenuItems } from "./MenuItems";
 import "./NavBar.css";
 
@@ -53,7 +53,7 @@ class NavBar extends Component {
               {MenuItems.map((item, index) => {
                 return (
                   <li key={index}>
-                    <a className={item.cName} href={item.url}>
+                    <a className={item.cName} target="_blank" href={item.url}>
                       {item.title}
                     </a>
                   </li>

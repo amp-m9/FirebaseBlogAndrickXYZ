@@ -1,10 +1,10 @@
 import React from "react";
 export const MenuItems = [
-    {
-        title: <i className="fab fa-linkedin"></i>,
-        url: '#',
-        cName: 'nav-links'
-    },
+    // {
+    //     title: <i className="fab fa-linkedin"></i>,
+    //     url: '#',
+    //     cName: 'nav-links'
+    // },
     {
         title: <i className="fab fa-github"></i>,
         url: 'https://github.com/amp-m9?tab=projects',
@@ -17,7 +17,7 @@ export const MenuItems = [
     },
     {
         title: <i className="fab fa-artstation"></i>,
-        url: '#',
+        url: 'https://www.artstation.com/amp_m9',
         cName: 'nav-links'
     }
 
