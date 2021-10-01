@@ -467,6 +467,14 @@
   color: #4a4e69;
   background-color: #f2e9e4;
 }
+/*==============PROJECTS PAGE====================*/
+.main-projects.cards{
+  background-color: white;
+  border-top: #707070;
+  border-bottom: #707070;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
 /*==============SCROLL BARS====================*/
 ::-webkit-scrollbar {
   width: 5px;
